@@ -9,7 +9,7 @@ const EditBlogPage = ({updateBlog}) => {
   const [title, setTitle] = useState("")
   const [content, setContent] = useState("")
   useEffect(() => {
-    axios.get(`http://127.0.0.1:8000/blogs/${slug}/`)
+    axios.get(`https://bloggapp-vkj5.onrender.com/blogs/${slug}/`)
     .then(res => { 
       setBlog(res.data)
       setTitle(res.data.title)

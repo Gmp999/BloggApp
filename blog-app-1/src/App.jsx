@@ -17,7 +17,7 @@ import { toast } from 'react-toastify'
 const App = () => {
 
   const createBlog = (data) => {
-    axios.post("http://127.0.0.1:8000/blogs/",data)
+    axios.post("https://bloggapp-vkj5.onrender.com/blogs/",data)
     .then(res => {
       console.log(res.data)
       toast.success("Blog added Successfully")
@@ -27,7 +27,7 @@ const App = () => {
 
 
   const updateBlog = (data, slug) => {
-    axios.put(`http://127.0.0.1:8000/blogs/${slug}/`,data)
+    axios.put(`https://bloggapp-vkj5.onrender.com/blogs/${slug}/`,data)
     .then(res => {
       toast.success("Blog Edited Successfully!!")
     })

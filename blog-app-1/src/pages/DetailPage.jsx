@@ -14,7 +14,7 @@ const DetailPage = () => {
   const [showModal, setshowModal] = useState(false)
 
   useEffect(() => {
-    axios.get(`http://127.0.0.1:8000/blogs/${slug}`)
+    axios.get(`https://bloggapp-vkj5.onrender.com//blogs/${slug}`)
     .then(res => {
       console.log(res.data)
       setBlog(res.data)
@@ -28,7 +28,7 @@ const DetailPage = () => {
   }
 
   const deleteBlog = () => {
-    axios.delete(`http://127.0.0.1:8000/blogs/${slug}/`)
+    axios.delete(`https://bloggapp-vkj5.onrender.com/blogs/${slug}/`)
     .then(res => {
       toast.success("Blog Deleted Successfully!!")
     })
