@@ -8,7 +8,7 @@ const BlogContainer = () => {
   const [loading, setLoding] = useState(true)
 
   useEffect(() => {
-    axios.get(`https://bloggapp-vkj5.onrender.com/blogs/recent`)
+    axios.get(`https://bloggapp-vkj5.onrender.com/blogs/recent/`)
       .then(res => {
         console.log(res.data);
         setBlogs(res.data);
