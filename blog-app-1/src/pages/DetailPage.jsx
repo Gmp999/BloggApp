@@ -14,7 +14,7 @@ const DetailPage = () => {
   const [showModal, setshowModal] = useState(false)
 
   useEffect(() => {
-    axios.get(`https://bloggapp-vkj5.onrender.com//blogs/${slug}`)
+    axios.get(`https://bloggapp-vkj5.onrender.com/blogs/${slug}`)
     .then(res => {
       console.log(res.data)
       setBlog(res.data)
